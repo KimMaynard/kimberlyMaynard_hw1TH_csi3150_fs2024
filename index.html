@@ -3,18 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/jpg" href="/assets/img/catFavicon.png">
+    <link rel="icon" type="image/jpg" href="/assets/img/catFavicon.png" />
     <title>Home</title>
     <!--import for boxicons-->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- link to custom css file -->
+    <link rel="stylesheet" href="./css/single-portfolio-style.css" />
   </head>
 
   <body>
     <!-- navbar -->
-        <header class="navbar">
+    <header class="navbar">
+      <img class="logo" src="/assets/img/catFavicon.png" alt="" />
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -22,46 +25,55 @@
           <li><a href="./html/my_fun_facts.html">Fun Facts</a></li>
         </ul>
       </nav>
+      <button class="hire-me-btn">
+        <a href="https://www.linkedin.com/in/kim-maynard-8a34711b7/">Hire Me</a>
+      </button>
+    </header>
 
-    <header><h1>Welcome to Kim's Portfolio</h1></header>
-    <hr>
+    <header class="welcome"><h1>Welcome to Kim's Portfolio</h1></header>
+
     <br /><br />
     <!--Avatar pic and inspirational quote-->
     <figure>
-      <img
-        src="/assets/img/myPic.jpg"
-        height="250"
-        alt="Avatar Pic"
-        title="Kim"
-      />
-      <figcaption>
-        <b
-          >"I had to fight; I had to fall, and I had to get hurt to be where I
-          am."--Dhanush</b
-        >
-      </figcaption>
+      <div class="pic-and-quote">
+        <img
+          class="my-pic"
+          src="/assets/img/myPic.jpg"
+          height="250"
+          alt="Avatar Pic"
+          title="Kim"
+        />
+        <figcaption>
+          <b
+            >"I had to fight; I had to fall, <br />and I had to get hurt to be
+            where I am."<br />--Dhanush</b
+          >
+        </figcaption>
+      </div>
+
+      <!--Elevator pitch-->
+      <section class="elevator-pitch">
+        <header class="about-me-header"><h3>About Me:</h3></header>
+        Hello, my name is Kim. I was born and raised in Walled Lake, Michigan.
+        <br />I attended Walled Lake Central High School before going on to
+        Oakland University. <br />I am currently pursuing a Bachelor's in IT and
+        a minor in Japanese. <br />Over the summer I had an internship for my
+        university as a network engineer. <br />At my internship I explored
+        different aspects of cybersecurity. <br />
+        It has inspired me to pursue a career in cybersecurity when I graduate.
+        <br />
+        To know more about me, check out my
+        <a href="./html/my_resume.html">resume</a> and
+        <a href="./html/my_fun_facts.html">fun fact</a> page.
+      </section>
     </figure>
 
     <br />
 
-    <!--Elevator pitch-->
-    <header><h3>About Me:</h3></header>
-    <section>
-      Hello, my name is Kim. I was born and raised in Walled Lake, Michigan.
-      <br />I attended Walled Lake Central High School before going on to
-      Oakland University. <br />I am currently pursuing a Bachelor's in IT and a
-      minor in Japanese. <br />Over the summer I had an internship for my
-      university as a network engineer. <br />At my internship I explored
-      different aspects of cybersecurity. <br />
-      It has inspired me to pursue a career in cybersecurity when I graduate. <br> To know more about me, check out my <a href="./html/my_resume.html">resume</a
-      > and <a href="./html/my_fun_facts.html">fun fact</a
-      > page.
-    </section>
-
-    <section>
-      <br /><br /><br />
-      <label for="progress bar">82 of 130 Credits Completed:</label>
-      <progress id="degree progress" max="100" value="86">86%</progress>
+    <h3 class="bar-header">Current Progress:</h3>
+    <section class="degree-progress">
+      <label class="progress-label">82 of 130 Credits Completed </label>
+      <progress class="progress-bar" max="100" value="86">86%</progress>
     </section>
 
     <!--Create space and horizontal line break-->
